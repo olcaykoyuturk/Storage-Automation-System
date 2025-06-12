@@ -75,7 +75,7 @@ void updateClientState(String clientId) {
     case GO_TO_PICKUP:
       if (client.x == client.targetX && client.y == client.targetY) {
         client.state = PICKING;
-        client.targetX = client.dropoffX;  // Bırakım noktasını hedef yap
+        client.targetX = client.dropoffX;
         client.targetY = client.dropoffY;
         sendLogMessage(clientId + " alım noktasına ulaştı, yükleme bekleniyor...");
       }
